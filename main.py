@@ -63,7 +63,6 @@ while run:
             run = False
         elif event.type == pygame.MOUSEBUTTONDOWN:
             boardx, boardy = windowToBoardCoord(event.pos[0], event.pos[1])
-            livecells.append((boardx,boardy))
             prev[boardy][boardx] = 1
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
